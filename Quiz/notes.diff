@@ -1,0 +1,27 @@
+
+Table for app
+
+Quizz
+    id, name, description, minutes
+Questions
+    id, question, quiz_id
+result
+    user_id, question_id, quiz_id, answer_id
+answer
+    id, question_id, answer, is_correct
+
+
+intermediate table 
+quiz_user
+    id, quiz_id, user_id
+
+
+In User Table - also include
+    visible_password, occupation, address, phone, is_admin
+
+
+
+    Relationship
+
+    Model - Quiz - > quiz can have n number of question 
+                        Quiz has many question
